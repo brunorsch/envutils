@@ -1,0 +1,14 @@
+[alias]
+	sts = status
+	co = checkout
+	cm = commit -m
+    cma = commit --amend --no-edit
+    cmae = commit --amend
+	s = status
+	ps = push
+	psf = push -f 
+[core]
+	commentChar = ";"
+	sshCommand = ssh -i ~/.ssh/id_rsa_1 -F /dev/null
+	eol = lf
+	autocrlf = input

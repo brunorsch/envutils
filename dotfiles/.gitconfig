@@ -6,7 +6,8 @@
   cmae = commit --amend
   s = status
   ps = push
-  psf = push -f 
+  psf = push -f
+  brd = branch -D
 [core]
   commentChar = ";"
   eol = lf

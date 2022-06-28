@@ -12,6 +12,8 @@
   commentChar = ";"
   eol = lf
   autocrlf = input
+[commit]
+	gpgsign = true
 [user]
   name = Bruno Ribeiro
   email = brunoribeiro.sch@gmail.com

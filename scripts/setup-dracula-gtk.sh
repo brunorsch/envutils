@@ -1,3 +1,5 @@
+mkdir ~/.dracula-theme
+
 wget https://github.com/dracula/gtk/archive/master.zip -O ~/.dracula-theme/gtk.zip
 
 unzip ~/.dracula-theme/gtk.zip -d ~/themes

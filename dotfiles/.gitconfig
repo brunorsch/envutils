@@ -13,7 +13,7 @@
   eol = lf
   autocrlf = input
 [commit]
-	gpgsign = true
+  gpgsign = true
 [user]
   name = Bruno Ribeiro
   email = brunoribeiro.sch@gmail.com

@@ -37,15 +37,13 @@ zinit light-mode for \
     zdharma-continuum/zinit-annex-patch-dl \
     zdharma-continuum/zinit-annex-rust
 
-# Zinit custom plugins
+### End of Zinit's installer chunk
+
+### My custom stuff:
+
 zinit light zdharma-continuum/fast-syntax-highlighting
 zinit light zsh-users/zsh-autosuggestions
 zinit light zsh-users/zsh-completions
-
-### End of Zinit's installer chunk
-
-
-### My custom stuff:
 
 # Spaceship setup
 SPACESHIP_PROMPT_ORDER=(
@@ -55,18 +53,13 @@ SPACESHIP_PROMPT_ORDER=(
   git           # Git section (git_branch + git_status)
   exec_time     # Execution time
   line_sep      # Line break
-  vi_mode       # Vi-mode indicator
   jobs          # Background jobs indicator
   exit_code     # Exit code section
   char          # Prompt character
 )
 SPACESHIP_USER_SHOW=always
-SPACESHIP_PROMPT_ADD_NEWLINE=false
+SPACESHIP_PROMPT_ADD_NEWLINE=true
 SPACESHIP_CHAR_SYMBOL="⮞"
 SPACESHIP_CHAR_SUFFIX=" "
 
-# Golang Setup
-export GOPATH=$HOME/godev
-export GOROOT=/usr/local/go
-export PATH=$PATH:$GOPATH/bin:$GOROOT/bin
-
+alias code="flatpak run com.visualstudio.code"

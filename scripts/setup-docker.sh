@@ -15,12 +15,8 @@ sudo chmod +x /usr/local/bin/docker-compose
 sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
 
 # ctop
-echo "deb http://packages.azlux.fr/debian/ buster main" | sudo tee /etc/apt/sources.list.d/azlux.list
-
-wget -qO - https://azlux.fr/repo.gpg.key | sudo apt-key add -
-
-sudo apt update
-sudo apt install -y docker-ctop
+sudo wget https://github.com/bcicen/ctop/releases/download/v0.7.7/ctop-0.7.7-linux-amd64 -O /usr/local/bin/ctop
+sudo chmod +x /usr/local/bin/ctop
 
 sudo groupadd docker
 sudo usermod -aG docker $USER
